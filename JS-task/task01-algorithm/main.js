@@ -1,4 +1,4 @@
-const cityList = [{ "id": 1, "name": "Janeva Ciccone", "email": "jciccone0@instagram.com", "rating": 3, "address": "3943 Thackeray Junction" },
+const customerList = [{ "id": 1, "name": "Janeva Ciccone", "email": "jciccone0@instagram.com", "rating": 3, "address": "3943 Thackeray Junction" },
 { "id": 2, "name": "Cesar Fernant", "email": "cfernant1@wunderground.com", "rating": 4, "address": "2809 Truax Plaza" },
 { "id": 3, "name": "Gwenora Standing", "email": "gstanding2@shutterfly.com", "rating": 4, "address": "534 Rieder Crossing" },
 { "id": 4, "name": "Fields Ferneley", "email": "fferneley3@gnu.org", "rating": 5, "address": "8 Sloan Alley" },
@@ -10,13 +10,13 @@ const cityList = [{ "id": 1, "name": "Janeva Ciccone", "email": "jciccone0@insta
 { "id": 10, "name": "Lin Surmon", "email": "lsurmon9@myspace.com", "rating": 3, "address": "4949 Memorial Way" }
 ];
 
-const cityFilter = (list, name, rating) => {
-    return list.filter(city => city.name.includes(name) && city.rating >= rating).map(city => city.name);
+const customerFilter = (list, name, rating) => {
+    return list.filter(customer => customer.name.includes(name) && customer.rating >= rating).map(customer => customer.name);
 };
 
 if (typeof module !== 'undefined') {
     module.exports = {
-        cityList,
-        cityFilter,
+        customerList,
+        customerFilter,
     };
 }
